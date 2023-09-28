@@ -1,6 +1,6 @@
-#Sunay Patil
-#IIT Dharwad
-#Computer Science and Engineering
+# Sunay Patil
+# IIT Dharwad
+# Computer Science and Engineering
 
 # Chat Sphere
 
