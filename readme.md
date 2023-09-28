@@ -1,3 +1,7 @@
+#Sunay Patil
+#IIT Dharwad
+#Computer Science and Engineering
+
 # Chat Sphere
 
 ## Get started locally with below commands
