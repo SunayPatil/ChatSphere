@@ -1,0 +1,15 @@
+.site-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0.3rem 2rem; */
+}
+.nav li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.site-identity img{
+    width: 80px;
+    height: 70px;
+    /* border-radius: 50%; */
+}
