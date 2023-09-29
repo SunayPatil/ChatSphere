@@ -4,6 +4,8 @@
 
 # Chat Sphere
 
+## Link to website hosted on vercel - https://dhcat2-0.vercel.app/
+
 ## Get started locally with below commands
 
 ```
