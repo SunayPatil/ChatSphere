@@ -129,13 +129,13 @@ const Signup = () => {
                   <input
                     onClick={handleSiginClicked}
                     type="submit"
-                    value="Sumbit"
+                    value="Submit"
                   />
                 </div>
                 <div className="text sign-up-text">
                   Don't have an account?{" "}
                   <label onClick={handleSignUpNowClicked} htmlFor="flip">
-                    Sigup now
+                    Signup now
                   </label>
                 </div>
               </div>
@@ -179,7 +179,7 @@ const Signup = () => {
                   <input
                     onClick={handleSignupClicked}
                     type="submit"
-                    value="Sumbit"
+                    value="Submit"
                   />
                 </div>
                 <div className="text sign-up-text">
