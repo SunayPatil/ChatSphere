@@ -84,7 +84,6 @@ const Chat = () => {
   }, [socket, room]);
 
   const addChatFunc = async () => {
-    setLoading(true);
     let res = await addChat(room, {
       time: new Date(),
       sender: userDetails.name,
@@ -93,8 +92,6 @@ const Chat = () => {
       imgurl: userDetails.imgurl,
       id: Math.random().toString(36).substring(6),
     });
-
-    setLoading(false);
   };
   const getChatFunc = async () => {
     setLoading(true);
