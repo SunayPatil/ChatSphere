@@ -26,10 +26,8 @@ const Chat = () => {
   const [users2, setUsers2] = useState([]);
   const userDetails = {
     ...ctx?.adminData,
-    imgurl: `https://avatars.dicebear.com/api/human/$%7${ctx?.adminData?.id}%7D.svg`,
+    imgurl: `https://api.dicebear.com/9.x/bottts-neutral/svg?seed=${ctx?.adminData?.id}`
   };
-
-  console.log(userDetails);
 
   const fetchUserList = async () => {
     setUserLoading(true);
@@ -171,7 +169,6 @@ const Chat = () => {
       alert("can't make a new room right now");
     }
   };
-  console.log(chats);
 
   function timeSince(date) {
     var seconds = Math.floor((new Date() - date) / 1000);
@@ -243,7 +240,7 @@ const Chat = () => {
                           height="40"
                         />
                         <div className="flex-grow-1 ml-3">
-                          Commnunity
+                          Community
                           {/* <div className="small">
                         <span className="fas fa-circle chat-online"></span>{" "}
                         Online
@@ -257,14 +254,14 @@ const Chat = () => {
                           onClick={() =>
                             handleUserClick(user?._id, {
                               userName: user.name,
-                              userImg: `https://avatars.dicebear.com/api/human/$%7${user?._id}%7D.svg`,
+                              userImg: `https://api.dicebear.com/9.x/bottts-neutral/svg?seed=${user?._id}`
                             })
                           }
                           className="list-group-item list-group-item-action border-0"
                         >
                           <div className="d-flex align-items-start">
                             <img
-                              src={`https://avatars.dicebear.com/api/human/$%7${user?._id}%7D.svg`}
+                              src={`https://api.dicebear.com/9.x/bottts-neutral/svg?seed=${user?._id}`}
                               className="rounded-circle mr-1"
                               alt="Vanessa Tucker"
                               width="40"

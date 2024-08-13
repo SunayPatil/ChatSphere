@@ -95,11 +95,11 @@ const addChat = async (req, res) => {
     let chatPoolDocument = await chatPool.findOne({});
 
     // If the document doesn't exist, create a new one
-    // if (!chatPoolDocument) {
-    //   chatPoolDocument = new chatPool({
-    //     chatRooms: new Map(),
-    //   });
-    // }
+    if (!chatPoolDocument) {
+      chatPoolDocument = new chatPool({
+        chatRooms: new Map(),
+      });
+    }
 
     // Get the chatRooms Map from the document or create it if it doesn't exist
     const chatRooms = chatPoolDocument.chatRooms || new Map();
