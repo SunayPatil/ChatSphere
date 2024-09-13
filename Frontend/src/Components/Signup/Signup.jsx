@@ -74,7 +74,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="container">
+   <>
+   {!ctx.isLoggedIn &&  <div className="container">
       <input type="checkbox" id="flip" />
       <div className="cover">
         <div className="front">
@@ -87,14 +88,6 @@ const Signup = () => {
               Every new friend is a <br /> new adventure
             </span>
             <span className="text-2">Let's get connected</span>
-          </div>
-        </div>
-        <div className="back">
-          <div className="text">
-            <span className="text-1">
-              Complete miles of journey <br />/ with one step
-            </span>
-            <span className="text-2">Let's get started</span>
           </div>
         </div>
       </div>
@@ -193,7 +186,8 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>}
+   </>
   );
 };
 
